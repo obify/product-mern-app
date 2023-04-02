@@ -21,9 +21,9 @@ const APP_PORT = 9000;
 app.use(cors());
 app.use(express.json());
 
-require('./models/product_model');
+require('./src/models/product_model');
 
-app.use(require('./routes/product_route'));
+app.use(require('./src/routes/product_route'));
 
 
 app.listen(APP_PORT, () => {
