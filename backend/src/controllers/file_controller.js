@@ -2,7 +2,7 @@ const multer = require("multer");
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, "uploads/")
+        cb(null, "/tmp/")
 
     },
     filename: (req, file, cb) => {
@@ -29,13 +29,13 @@ exports.upload = multer({
 
 });
 
-exports.downloadFile = (req, res)=>{
+exports.downloadFile = (req, res) => {
     const filename = req.params.filename;
-    const path = __basedir + '/uploads/';
+    const path = __basedir + '/tmp/';
 
-    res.download(path + filename, (error)=>{
-        if(error){
-            res.status(500).send({message: 'File cannot be downloaded '+error})
+    res.download(path + filename, (error) => {
+        if (error) {
+            res.status(500).send({ message: 'File cannot be downloaded ' + error })
         }
     })
 }
