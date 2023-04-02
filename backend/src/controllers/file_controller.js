@@ -31,7 +31,7 @@ exports.upload = multer({
 
 exports.downloadFile = (req, res) => {
     const filename = req.params.filename;
-    const path = __basedir + '/tmp/';
+    const path = '/tmp/';
 
     res.download(path + filename, (error) => {
         if (error) {
