@@ -1,1 +1,1 @@
-export const API_BASE_URL = "https://product-mern-aezju5esp-obify.vercel.app";
+export const API_BASE_URL = "https://product-mern-app.vercel.app";
