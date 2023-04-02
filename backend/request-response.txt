@@ -1,0 +1,33 @@
+Get products 
+http://localhost:9000/allproducts
+
+createproduct  
+
+http://localhost:9000/createproduct
+
+{
+
+    "productName":"Mobile Phone",
+    "description":"Mobile phone for office use",
+    "productPrice":9999,
+    "category":"Smart Phone",
+    "image":"Somepic.jpg"
+}
+
+Update product
+
+http://localhost:9000/updateproduct/641a0afc28b8009c46c37966
+
+
+{
+
+    "productName":"Mobile Phone",
+    "description":"Mobile phone for office use",
+    "productPrice":9999,
+    "category":"Smart Phone",
+    "image":"Somepic.jpg"
+}
+
+Delete product 
+http://localhost:9000/updateproduct/641a0afc28b8009c46c37966
+
